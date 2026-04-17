@@ -1,6 +1,6 @@
 ## Usage from older Bazel
 
-See instructions below for installation and use of `rules_graalvm` on Bazel 4 or older, via the `WORKSPACE` file:
+See instructions below for installation and use of `rules_graalvm` on Bazel 5, via the `WORKSPACE` file:
 
 ### Installation in `WORKSPACE.bazel`
 
@@ -25,7 +25,7 @@ graalvm_repository(
 
 ## Building native images
 
-When building a native image on Bazel 4, **make sure to import the legacy rule:**
+When building a native image on Bazel 5, **make sure to import the legacy rule:**
 
 ```starlark
 load(

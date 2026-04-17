@@ -210,14 +210,6 @@ jobs:
             labs: false
             skip: false
 
-          # Test: Bazel 4
-          - label: Bazel 4
-            target: sample
-            action: build
-            directory: "./example/integration_tests/bazel4"
-            labs: false
-            skip: ${{ contains(inputs.runner, 'windows') }}
-
           # Test: Bazel 5
           - label: Bazel 5
             target: sample

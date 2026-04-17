@@ -18,7 +18,7 @@ Use [GraalVM](https://graalvm.org) from [Bazel](https://bazel.build), with suppo
 - [Installing components with `gu`](./components.md)
 - [Using GraalVM as a Bazel Java toolchain](./toolchain.md)
 - [Support for Bazel 6, Bazel 7, and Bzlmod](./modern-bazel.md)
-- [Support for Bazel 4 and Bazel 5, drop-in replacement for `rules_graal`](./legacy-bazel.md)
+- [Support for Bazel 5, drop-in replacement for `rules_graal`](./legacy-bazel.md)
 - [Run GraalVM binaries directly](./binary-targets.md)
 - [Build native shared libraries from Java or polyglot code](./shared-libraries.md)
 - [Example projects for each Bazel version](./examples.md)
@@ -185,7 +185,7 @@ native_image(
 )
 ```
 
-### Build a native binary on Bazel 4 and Bazel 5
+### Build a native binary on Bazel 5
 
 > API docs for legacy [`native_image`](./api/legacy.md) rule
 
@@ -214,11 +214,11 @@ make sure to add the `native_image_tool` attribute to point to `@yourrepo//:nati
 ## Examples
 
 See the list of [examples](./examples.md), which are used as continuous integration tests. Examples are available
-for Bazel 4-7.
+for Bazel 5-8.
 
 ## Hermeticity / strictness
 
-These rules attempt to strike as optimal a balance as possible between older Bazel support (starting at Bazel 4) and the
+These rules attempt to strike as optimal a balance as possible between older Bazel support (starting at Bazel 5) and the
 maximum possible strictness/hermeticity for action execution.
 
 [Bazel Toolchains][1] are used to resolve the C++ compiler which is provided to `native-image`.
