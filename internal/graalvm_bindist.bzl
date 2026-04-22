@@ -438,7 +438,7 @@ def _graal_bindist_repository_impl(ctx):
                     exec_result = ctx.execute([gu_cmd, "install", manual_component], quiet = True)
                     if exec_result.return_code != 0:
                         fail("Unable to install component '{component}':\n{stdout}\n{stderr}".format(
-                            info.component,
+                            component = manual_component,
                             stdout = exec_result.stdout,
                             stderr = exec_result.stderr,
                         ))
