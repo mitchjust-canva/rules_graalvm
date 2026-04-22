@@ -250,14 +250,6 @@ jobs:
             labs: false
             skip: false
 
-          # Test: Components on CE
-          - label: Components (CE)
-            target: sample
-            action: build
-            directory: "./example/integration_tests/components-ce"
-            labs: false
-            skip: false
-
           # Test: Java Toolchain
           - label: Java Toolchain
             target: sample
@@ -306,35 +298,11 @@ jobs:
             labs: false
             skip: false
 
-          # Test: GVM CE 20
-          - label: GraalVM CE 20
-            target: sample
-            action: build
-            directory: "./example/integration_tests/graalvm-ce-20"
-            labs: false
-            skip: false
-
           # Test: GVM CE 21
           - label: GraalVM CE 21
             target: sample
             action: build
             directory: "./example/integration_tests/graalvm-ce-21"
-            labs: false
-            skip: false
-
-          # Test: GVM CE 22
-          - label: GraalVM CE 22
-            target: sample
-            action: build
-            directory: "./example/integration_tests/graalvm-ce-22"
-            labs: false
-            skip: false
-
-          # Test: GVM CE 23
-          - label: GraalVM CE 23
-            target: sample
-            action: build
-            directory: "./example/integration_tests/graalvm-ce-23"
             labs: false
             skip: false
 
@@ -346,35 +314,11 @@ jobs:
             labs: false
             skip: false
 
-          # Test: Oracle GVM 20
-          - label: Oracle GraalVM 20
-            target: sample
-            action: build
-            directory: "./example/integration_tests/graalvm-oracle-20"
-            labs: false
-            skip: false
-
           # Test: Oracle GVM 21
           - label: Oracle GraalVM 21
             target: sample
             action: build
             directory: "./example/integration_tests/graalvm-oracle-21"
-            labs: false
-            skip: false
-
-          # Test: Oracle GVM 22
-          - label: Oracle GraalVM 22
-            target: sample
-            action: build
-            directory: "./example/integration_tests/graalvm-oracle-22"
-            labs: false
-            skip: false
-
-          # Test: Oracle GVM 23
-          - label: Oracle GraalVM 23
-            target: sample
-            action: build
-            directory: "./example/integration_tests/graalvm-oracle-23"
             labs: false
             skip: false
 
